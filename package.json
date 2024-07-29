@@ -2,10 +2,11 @@
   "name": "api_inodoro_pereyra",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/ app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node server.ts",
+    "dev": "ts-node server.ts",
+    "start": "node dist/app.js",
     "build": "tsc"
   },
   "keywords": [],
