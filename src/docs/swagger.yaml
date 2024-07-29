@@ -44,6 +44,9 @@ paths:
     get:
       summary: Obtiene un personaje del listado
       tags: [Personajes]
+      parameters:
+        - name: id
+          in: path
       responses:
         "200":
           description: Obtener personaje 
@@ -90,6 +93,9 @@ paths:
     get:
       summary: Obtiene una frase del listado
       tags: [Frases]
+      parameters:
+        - name: id
+          in: path
       responses:
         "200":
           description: Obtener frase 

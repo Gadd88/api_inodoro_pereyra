@@ -2,12 +2,13 @@
   "name": "api_inodoro_pereyra",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/ app.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node server.ts",
-    "start": "node dist/app.js",
-    "build": "tsc"
+    "dev": "ts-node src/server.ts",
+    "build": "tsc && npm run copy",
+    "copy": "copyfiles -u 1 src/data/**/* dist && copyfiles -u 1 src/docs/**/* dist",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
-    "@types/swagger-ui-express": "^4.1.6"
+    "@types/swagger-ui-express": "^4.1.6",
+    "copyfiles": "^2.4.1"
   }
 }
