@@ -40,7 +40,7 @@ paths:
                         ]
         "500":
           description: Error obteniendo los personajes
-  /api/personajes/:id:
+  /api/personajes/{id}:
     get:
       summary: Obtiene un personaje del listado
       tags: [Personajes]
@@ -89,7 +89,7 @@ paths:
                         }
         "500":
           description: Error obteniendo las frases
-  /api/frases/:id:
+  /api/frases/{id}:
     get:
       summary: Obtiene una frase del listado
       tags: [Frases]
