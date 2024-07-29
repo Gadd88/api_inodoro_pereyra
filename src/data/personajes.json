@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nombre": "Inodoro Pereyra",
+    "descripcion": "Gaucho solitario, filósofo y humorista, protagonista de la historieta.",
+    "frase_celebre": "Soy Pereyra por mi mama, e Inodoro por mi tata, que era sanitario",
+    "dato_adicional": "Siempre acompañado por su perro Mendieta y su esposa Eulogia."
+  },
+  {
+    "id": 2,
+    "nombre": "Mendieta",
+    "descripcion": "El fiel perro de Inodoro, que tiene la capacidad de hablar.",
+    "frase_celebre": "Que lo parió..!",
+    "dato_adicional": "Es el confidente y compañero inseparable de Inodoro Pereyra."
+  },
+  {
+    "id": 3,
+    "nombre": "Eulogia",
+    "descripcion": "La esposa de Inodoro, dedicada y comprensiva.",
+    "frase_celebre": "Hay una muchacha en la ciudad que circula diciendo que usted es el padre de sus gemelos...",
+    "dato_adicional": "Suele ser el soporte emocional de Inodoro y tiene una visión práctica de la vida."
+  },
+  {
+    "id": 4,
+    "nombre": "Los loros",
+    "descripcion": "Dos loros que suelen comentar las situaciones con sarcasmo.",
+    "frase_celebre": null,
+    "dato_adicional": "Su humor ácido y comentarios irónicos siempre aportan una perspectiva divertida."
+  },
+  {
+    "id": 5,
+    "nombre": "Los ranqueles",
+    "descripcion": "Grupo indígena que aparece en las historias, a menudo representados como astutos y sabios.",
+    "frase_celebre": "Nos dijeron que usté tiene conocimientos de inglés.",
+    "dato_adicional": "Simbolizan la resistencia y sabiduría de los pueblos originarios."
+  },
+  {
+    "id": 6,
+    "nombre": "Nabucodonosor II",
+    "descripcion": "Es un cerdo vegetariano que habla, se cree sex symbol ya que es el único macho en medio de varias hembras.",
+    "frase_celebre": null,
+    "dato_adicional": "Ganó el primer lugar en una feria local, se considera a si mismo como filósofo e intelectual"
+  },
+  {
+    "id": 7,
+    "nombre": "El Escorpión Resolana",
+    "descripcion": "Gaucho de la misma zona, muy rústico y bravo",
+    "frase_celebre": "¡Inodoro, esta vez no escaparás! ¡El Escorpión Resolana siempre vuelve!",
+    "dato_adicional": "En una ocasión se batió a duelo con Inodoro Pereyra luego de haber insultado a Eulogia."
+  }
+]

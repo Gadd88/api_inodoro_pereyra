@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: InodoroApi
+  version: 1.0.0
+  description: |-
+    Api con personajes y frases célebres de la tira cómica argentina Inodoro Pereyra, del autor Fontanarrosa
+
+servers:
+  - url: http://localhost:3000
+    description: Servidor Local
+  - url: https://inodoro-pereyra-api.onrender.com/
+    description: Deploy en Render
+
+tags:
+  - name: Personajes
+    description: Personajes
+  - name: Frases
+    description: Frases
+paths:
+  /api/personajes:
+    get:
+      summary: Obtiene la lista de los personajes que aparecen en la historieta
+      tags: [Personajes]
+      responses:
+        "200":
+          description: Obtener personajes 
+          content:
+            application/json:
+              schema:
+                type: json
+                example:
+                        [
+                          {
+                            "id": 1,
+                            "nombre": "Inodoro Pereyra",
+                            "descripcion": "Gaucho solitario, filósofo y humorista, protagonista de la historieta.",
+                            "frase_celebre": "Soy Pereyra por mi mama, e Inodoro por mi tata, que era sanitario",
+                            "dato_adicional": "Siempre incorporado por su perro Mendieta y su esposa Eulogia."
+                          },
+                        ]
+        "500":
+          description: Error obteniendo los personajes
+  /api/personajes/:id:
+    get:
+      summary: Obtiene un personaje del listado
+      tags: [Personajes]
+      responses:
+        "200":
+          description: Obtener personaje 
+          content:
+            application/json:
+              schema:
+                type: json
+                example:
+                        {
+                          "id": 1,
+                          "nombre": "Inodoro Pereyra",
+                          "descripcion": "Gaucho solitario, filósofo y humorista, protagonista de la historieta.",
+                          "frase_celebre": "Soy Pereyra por mi mama, e Inodoro por mi tata, que era sanitario",
+                          "dato_adicional": "Siempre incorporado por su perro Mendieta y su esposa Eulogia."
+                        }
+        "404":
+          description: Personaje no encontrado
+        "500":
+          description: Error obteniendo los personajes
+  /api/frases:
+    get:
+      summary: Obtiene la lista de las frases mas conocidas de los personajes de la historieta
+      tags: [Frases]
+      responses:
+        "200":
+          description: Obtener frases 
+          content:
+            application/json:
+              schema:
+                type: json
+                example:
+                        {
+                          "frases": [
+                                {
+                                  "id": 1,
+                                  "frase": "El tiempo es el mejor remedio para el cansancio.",
+                                  "autor": "Inodoro Pereyra"
+                                },
+                          ]
+                        }
+        "500":
+          description: Error obteniendo las frases
+  /api/frases/:id:
+    get:
+      summary: Obtiene una frase del listado
+      tags: [Frases]
+      responses:
+        "200":
+          description: Obtener frase 
+          content:
+            application/json:
+              schema:
+                type: json
+                example:
+                        {
+                          "id": 1,
+                          "frase": "El tiempo es el mejor remedio para el cansancio.",
+                          "autor": "Inodoro Pereyra"
+                        }
+        "404":
+          description: Frase no encontrada
+        "500":
+          description: Error obteniendo la frase
